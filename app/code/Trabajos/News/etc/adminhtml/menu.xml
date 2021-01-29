@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Trabajos_News::news" title="News" module="Trabajos_News" sortOrder="1000" parent="Trabajos_CoopeuchMenu::main_menu" resource="Trabajos_News::news"/>
+        <add id="Trabajos_News::categories" title="Manage Categories" module="Trabajos_News" sortOrder="10" action="news/category/index" resource="Trabajos_News::categories" parent="Trabajos_News::news"/>
+        <add id="Trabajos_News::articles" title="Manage Articles" module="Trabajos_News" sortOrder="20" action="news/article/index" resource="Trabajos_News::articles" parent="Trabajos_News::news"/>
+        <add id="Trabajos_News::homenews" title="Home News" module="Trabajos_News" sortOrder="30" action="news/homenews/index" resource="Trabajos_News::homenews" parent="Trabajos_News::news"/>
+    </menu>
+</config>
